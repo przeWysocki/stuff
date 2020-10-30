@@ -1,152 +1,200 @@
 <!DOCTYPE html>
 <html lang="pl">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="normalize.css" rel="stylesheet" type="text/css" />
-    <link href="style.css" rel="stylesheet" type="text/css" />
-    <title>Forms</title>
-  </head>
-
-  <body>
-    <main>
-      <h1>Różne formularze</h1>
-      <form class="form">
-        <fieldset>
-          <legend>Imię i nazwisko</legend>
-          <p>
-            <label for="firstName">Imię:</label>
-            <input
-              class="form__item"
-              id="firstName"
-              name="firstName"
-              placeholder="Podaj proszę swoje imię"
-            />
-            <label for="lastName">Nazwisko:</label>
-            <input
-              class="form__item"
-              id="lastName"
-              name="lastName"
-              placeholder="Podaj proszę swoje nazwisko"
-            />
-          </p>
-        </fieldset>
-
-        <fieldset>
-          <legend>Adres</legend>
-          <p>
-            <label for="streetName">Ulica:</label>
-            <input
-              class="form__item"
-              id="streetName"
-              name="addres"
-              placeholder="Podaj proszę nazwę ulicę"
-            />
-          </p>
-          <p>
-            <label for="city">Miasto:</label>
-            <input
-              class="form__item"
-              id="city"
-              name="city"
-              placeholder="Podaj proszę nazwę miasta"
-            />
-          </p>
-        </fieldset>
-
-        <fieldset>
-          <legend>Ulubiony kolor</legend>
-          <p>
-            <label> <input type="radio" name="color" value="red" />Red </label>
-          </p>
-          <p>
-            <label>
-              <input type="radio" name="color" value="blue" />
-              Blue
-            </label>
-          </p>
-          <p>
-            <label>
-              <input type="radio" name="color" value="silver" />
-              Silver
-            </label>
-          </p>
-          <p>
-            <label>
-              <input type="radio" name="color" value="none" />
-              Nie lubię kolorów
-            </label>
-          </p>
-          <p>
-            <label for="ownColor">Wpisz swój kolor:</label>
-            <input name="color" id="ownColor" placeholder="Podaj swój kolor" />
-          </p>
-        </fieldset>
-
-        <fieldset>
-          <legend>Zgoda na obcięcie kciuka</legend>
-          <p>
-            Wyrażam zgodę na obcięcie lewego kciuka.
-            <label class="fingerCut">
-              <input checked type="checkbox" />Zgadzam się</label
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="normalize.css" rel="stylesheet" type="text/css">
+        <link href="style.css" rel="stylesheet" type="text/css">
+        <title>Forms</title>
+    </head>
+    <body>
+        <main>
+            <h1>Różne formularze</h1>
+            <form action="https://dev.cotenfrontend.pl" class="form">
+                <fieldset>
+                    <legend>Imię i nazwisko</legend>
+                    <p>
+                        <label for="firstName">Imię:</label>
+                        <input
+                        
+                            class="form__item"
+                            id="firstName"
+                            name="firstName"
+                            placeholder="Podaj proszę swoje imię"
+                        >
+                        <label for="lastName">Nazwisko:</label>
+                        <input
+                        
+                            class="form__item"
+                            id="lastName"
+                            name="lastName"
+                            placeholder="Podaj proszę swoje nazwisko"
+                        >
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Adres</legend>
+                    <p>
+                        <label for="streetName">Ulica:</label>
+                        <input
+                        
+                            class="form__item"
+                            id="streetName"
+                            name="streetName"
+                            placeholder="Podaj proszę nazwę ulicę"
+                        >
+                    </p>
+                    <p>
+                        <label for="city">Miasto:</label>
+                        <input
+                        
+                            class="form__item"
+                            id="city"
+                            name="city"
+                            placeholder="Podaj proszę nazwę miasta"
+                        >
+                    </p>
+                </fieldset>
+                <fieldset >
+                    <legend>Ulubiony kolor</legend>
+                    <p>
+                        <label>
+                            <input type="radio" name="color" value="red">Red
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input  type="radio" name="color" value="blue">
+                            Blue
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input   type="radio" name="color" value="silver">
+                            Silver
+                        </label>
+                    </p>
+                    <p>
+                        <label>
+                            <input  type="radio" name="color" value="none">
+                            Nie lubię kolorów
+                        </label>
+                    </p>
+                    <p>
+                        <label for="ownColor">Wpisz swój kolor:</label>
+                        <input  name="color" id="ownColor" placeholder="Podaj swój kolor">
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Zgoda na obcięcie kciuka</legend>
+                    <p>
+                        Wyrażam zgodę na obcięcie lewego kciuka.
+                        <label class="fingerCut">
+                            <input  class="checkbox" name="agree" value="yes" checked type="checkbox">Zgadzam się
+                        </label
             >
-            <label class="fingerCut">
-              <input type="checkbox" />Nie zgadzam się</label
+                        <label class="fingerCut">
+                            <input class="checkbox" name="agree" value="no"type="checkbox">Nie zgadzam się
+                        </label
             >
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Numer buta</legend>
-          <p>
-            Podaj swój numer buta:
-            <label><input type="number" min="29" max="49" /></label>
-          </p>
-        </fieldset>
-        <fieldset>
-          <legend>Dane kontaktowe</legend>
-          <p>
-          <label>Numer telefonu<input type="tel" class="form__item"></label>
-          <label>Twój e-mail<input type="email" class="form__item"></label>
-          </p>
-        </fieldset>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Numer buta</legend>
+                    <p>
+                        Podaj swój numer buta:
+                        <label>
+                            <input name="shoeNumber" type="number" min="29" max="49"/>
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Dane kontaktowe</legend>
+                    <p>
+                        <label>Numer telefonu
+                            <input name="telNumber" type="tel" class="form__item"/>
+                        </label>
+                        <label>Twój e-mail
+                            <input name="email" type="email" class="form__item"/>
+                        </label>
+                    </p>
+                </fieldset>
+                <fieldset>
+                    <legend>Nastrój</legend>
+                    <p>
+                        Zły nastój to początek podziałki.
+                    </br>
+                    Dobry nastrój to najwyższy punkt na skali.
+                    <input
+                        name="yourMood"
+                    class="form__item"
+                        type="range"
+                        min="0"
+                        max="100"
+                        step="10"
+                        list="scale"
+                    >
+                    <datalist id="scale">
+                        <option value="0"></option>
+                        <option value="10"></option>
+                        <option value="20"></option>
+                        <option value="30"></option>
+                        <option value="40"></option>
+                        <option value="50"></option>
+                        <option value="60"></option>
+                        <option value="70"></option>
+                        <option value="80"></option>
+                        <option value="90"></option>
+                        <option value="100"></option>
+                    </datalist>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Twój avatar</legend>
+                <label>Wybierz zdjęcie na swój avatar
+                    <input type="file" class="form__item"/>
+                </label>
+            </fieldset>
+            <fieldset>
+                <legend>Twoje hasło</legend>
+                <p>
+                    <label for="login">Podaj swój login</label>
+                    <input
+                        class="form__item"
+                        id="login"
+                        name="login"
+                        placeholder="Podaj proszę swój login"
+                    >
+                    <label>Podaj hasło
+                        <input name="password" type="password" class="form__item"/>
+                    </label>
+                </p>
+            </fieldset>
+            <fieldset>
+                <legend>Rodzaj nadwozia</legend>
+                <label for="bodywork">Wybierz rodzaj nadwozia</label>
+                <select>
+                    <option>Kombi</option>
+                    <option>Sedan</option>
+                    <option>Kompakt</option>
+                    <option>Van</option>
+                    <option>Mini van</option>
+                </select>
+            </fieldset>
+            <fieldset>
+              <legend>Twój komentarz</legend>
+              <p>
+                <label for="yourComment">Zostaw po sobie ślad:</label>
+                <textarea class="textarea" id="yourComment" name="yourComment">No wymyśl coś...</textarea>
+              </p>
+            </fieldset>
 
 
-        <fieldset>
-          <legend>Nastrój</legend>
-          <p>
-            Zły nastój to początek podziałki.</br> Dobry nastrój to najwyższy punkt na skali.
-          <input
-            class="form__item"
-            type="range"
-            min="0"
-            max="100"
-            step="10"
-            list="scale"
-          />
-
-          <datalist id="scale">
-            <option value="0"></option>
-            <option value="10"></option>
-            <option value="20"></option>
-            <option value="30"></option>
-            <option value="40"></option>
-            <option value="50"></option>
-            <option value="60"></option>
-            <option value="70"></option>
-            <option value="80"></option>
-            <option value="90"></option>
-            <option value="100"></option>
-          </datalist>
-        </p>
-        </fieldset>
-        
-        <fieldset>
-          <legend>Twój avatar</legend>
-        <label>Wybierz zdjęcie na swój avatar<input type="file" class="form__item"></label>
-        </fieldset>
-
-
-      </form>
+          <fieldset>
+            <legend>Wyślij formularz</legend>
+            <input type="submit" name="send" value="Wyślij"/>
+          </fieldset>
+        </form>
     </main>
-  </body>
+</body>
 </html>
