@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="pl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="normalize.css" rel="stylesheet" type="text/css" />
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <title>Forms</title>
+  </head>
+
+  <body>
+    <main>
+      <h1>Różne formularze</h1>
+      <form class="form">
+        <fieldset>
+          <legend>Imię i nazwisko</legend>
+          <p>
+            <label for="firstName">Imię:</label>
+            <input
+              class="form__item"
+              id="firstName"
+              name="firstName"
+              placeholder="Podaj proszę swoje imię"
+            />
+            <label for="lastName">Nazwisko:</label>
+            <input
+              class="form__item"
+              id="lastName"
+              name="lastName"
+              placeholder="Podaj proszę swoje nazwisko"
+            />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Adres</legend>
+          <p>
+            <label for="streetName">Ulica:</label>
+            <input
+              class="form__item"
+              id="streetName"
+              name="addres"
+              placeholder="Podaj proszę nazwę ulicę"
+            />
+          </p>
+          <p>
+            <label for="city">Miasto:</label>
+            <input
+              class="form__item"
+              id="city"
+              name="city"
+              placeholder="Podaj proszę nazwę miasta"
+            />
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Chose a color</legend>
+          <p>
+            <label>
+              <input
+                type="radio"
+                name="color"
+                value="red"
+              />Red
+            </label>
+          </p>
+          <p>
+            <label>
+              <input
+                type="radio"
+                name="color"
+                value="blue"
+              />
+              Blue
+            </label>
+          </p>
+          <p>
+            <label>
+              <input
+                type="radio"
+                name="color"
+                value="silver"
+              />
+              Silver
+            </label>
+          </p>
+          <p>
+            <label>
+              <input
+                type="radio"
+                name="color"
+                value="none"
+              />
+              Nie lubię kolorów
+            </label>
+          </p>
+          <p>
+              <label for="ownColor">Wpisz swój kolor:</label>
+                  <input name="color" 
+                  id="ownColor"
+                  placeholder="Podaj swój kolor">
+          </p>
+
+
+        </fieldset>
+      </form>
+    </main>
+  </body>
+</html>
