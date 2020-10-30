@@ -27,3 +27,9 @@ main {
 fieldset {
     width: 900px;
 }
+
+.testowy {
+  color: red;
+  font-weight:bold;
+  font-size:16px;
+}
