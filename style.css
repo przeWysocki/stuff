@@ -11,21 +11,28 @@ body {
 main {
 }
 
+#datalist {
+  display:none;
+}
+
+
 .form {
    
 }
 
 .form__item {
   display: block;
-  align-items: center;
   margin: 0 0 16px 0;
   width: 100%;
 }
 
-
+.fingerCut {
+  display: block;
+  margin-top:16px;
+}
 
 fieldset {
-    width: 900px;
+margin-bottom:16px;
 }
 
 .testowy {
@@ -33,3 +40,4 @@ fieldset {
   font-weight:bold;
   font-size:16px;
 }
+

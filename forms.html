@@ -55,7 +55,7 @@
         </fieldset>
 
         <fieldset>
-          <legend>Chose a color</legend>
+          <legend>Ulubiony kolor</legend>
           <p>
             <label> <input type="radio" name="color" value="red" />Red </label>
           </p>
@@ -81,14 +81,69 @@
             <label for="ownColor">Wpisz swój kolor:</label>
             <input name="color" id="ownColor" placeholder="Podaj swój kolor" />
           </p>
+        </fieldset>
 
-
-          <p class="testowy">testowy boy!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!</p>
+        <fieldset>
+          <legend>Zgoda na obcięcie kciuka</legend>
+          <p>
+            Wyrażam zgodę na obcięcie lewego kciuka.
+            <label class="fingerCut">
+              <input checked type="checkbox" />Zgadzam się</label
+            >
+            <label class="fingerCut">
+              <input type="checkbox" />Nie zgadzam się</label
+            >
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Numer buta</legend>
+          <p>
+            Podaj swój numer buta:
+            <label><input type="number" min="29" max="49" /></label>
+          </p>
+        </fieldset>
+        <fieldset>
+          <legend>Dane kontaktowe</legend>
+          <p>
+          <label>Numer telefonu<input type="tel" class="form__item"></label>
+          <label>Twój e-mail<input type="email" class="form__item"></label>
+          </p>
         </fieldset>
 
 
+        <fieldset>
+          <legend>Nastrój</legend>
+          <p>
+            Zły nastój to początek podziałki.</br> Dobry nastrój to najwyższy punkt na skali.
+          <input
+            class="form__item"
+            type="range"
+            min="0"
+            max="100"
+            step="10"
+            list="scale"
+          />
 
-
+          <datalist id="scale">
+            <option value="0"></option>
+            <option value="10"></option>
+            <option value="20"></option>
+            <option value="30"></option>
+            <option value="40"></option>
+            <option value="50"></option>
+            <option value="60"></option>
+            <option value="70"></option>
+            <option value="80"></option>
+            <option value="90"></option>
+            <option value="100"></option>
+          </datalist>
+        </p>
+        </fieldset>
+        
+        <fieldset>
+          <legend>Twój avatar</legend>
+        <label>Wybierz zdjęcie na swój avatar<input type="file" class="form__item"></label>
+        </fieldset>
 
 
       </form>
